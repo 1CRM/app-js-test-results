@@ -1,0 +1,1468 @@
+{
+  "config": {
+    "configFile": "/home/crmadmin/app-js/packages/app-js/playwright.config.ts",
+    "rootDir": "/home/crmadmin/app-js/packages/app-js/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 6765,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:06.421Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-60f085b113a677673906",
+          "file": "auth.setup.ts",
+          "line": 14,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "axe.analyze.spec.ts",
+      "file": "axe.analyze.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "About",
+          "file": "axe.analyze.spec.ts",
+          "line": 70,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 4596,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:05:15.827Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-9c2678bfc0f216c4d911",
+              "file": "axe.analyze.spec.ts",
+              "line": 74,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login",
+          "file": "axe.analyze.spec.ts",
+          "line": 88,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 4482,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:05:20.654Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-9dbe1fdb80d3ee325403",
+              "file": "axe.analyze.spec.ts",
+              "line": 92,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Recover Your Password",
+          "file": "axe.analyze.spec.ts",
+          "line": 107,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 3897,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:05:25.144Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-a1361d524603a281af80",
+              "file": "axe.analyze.spec.ts",
+              "line": 111,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Search Results",
+          "file": "axe.analyze.spec.ts",
+          "line": 125,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 11816,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:05:29.052Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-c1e46e7c7ca9a7496781",
+              "file": "axe.analyze.spec.ts",
+              "line": 126,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Company Directory",
+          "file": "axe.analyze.spec.ts",
+          "line": 140,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 9081,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:05:40.880Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-a449843781e2a2905fc9",
+              "file": "axe.analyze.spec.ts",
+              "line": 141,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Calendar",
+          "file": "axe.analyze.spec.ts",
+          "line": 155,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 25535,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:05:49.972Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-e5c53c235e921153ceea",
+              "file": "axe.analyze.spec.ts",
+              "line": 156,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Dashboards",
+          "file": "axe.analyze.spec.ts",
+          "line": 175,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "timedOut",
+                      "duration": 300048,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 18,
+                            "line": 196
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.dashboard') to be visible\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\n\n  194 |     for (const link of links) {\n  195 |       await page.goto(link);\n> 196 |       await page.waitForSelector(\".dashboard\");\n      |                  ^\n  197 |       await page.waitForTimeout(8000);\n  198 |       const accessibilityScanResults = await new AxeBuilder({ page })\n  199 |         .withTags([\"wcag2a\", \"wcag2aa\", \"wcag21a\", \"wcag21aa\"])\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:196:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:06:15.522Z",
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": 5,
+                      "status": "timedOut",
+                      "duration": 302307,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 18,
+                            "line": 196
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.dashboard') to be visible\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\u001b[2m  -   locator resolved to hidden <div class=\"dashboard\" data-v-df3f26e5=\"\">…</div>\u001b[22m\n\n\n  194 |     for (const link of links) {\n  195 |       await page.goto(link);\n> 196 |       await page.waitForSelector(\".dashboard\");\n      |                  ^\n  197 |       await page.waitForTimeout(8000);\n  198 |       const accessibilityScanResults = await new AxeBuilder({ page })\n  199 |         .withTags([\"wcag2a\", \"wcag2aa\", \"wcag21a\", \"wcag21aa\"])\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:196:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-01-29T06:11:16.835Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/crmadmin/app-js/packages/app-js/test-results/axe.analyze-Dashboards-sho-d28fa-ble-WCAG-A-or-AA-violations-chromium-retry1/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-1176e7a7ff0af69f99db",
+              "file": "axe.analyze.spec.ts",
+              "line": 176,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "List View",
+          "file": "axe.analyze.spec.ts",
+          "line": 206,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 7694,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:16:24.190Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-3a4c16c6887de9e8de2e",
+              "file": "axe.analyze.spec.ts",
+              "line": 207,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Detail/Edit View",
+          "file": "axe.analyze.spec.ts",
+          "line": 231,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 3293,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-29T06:16:31.996Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-3d1414d184eba715c892",
+              "file": "axe.analyze.spec.ts",
+              "line": 232,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dashboard.spec.ts",
+      "file": "dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Dashboard elements were properly rendered",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 4572,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:15.776Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-90451cbc94dbc47b587b",
+          "file": "dashboard.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Edit Dashboard Info item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 5157,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:20.476Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-48ea563d43e5361ca078",
+          "file": "dashboard.spec.ts",
+          "line": 38,
+          "column": 5
+        },
+        {
+          "title": "That Delete Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 4365,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:25.649Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-3df3a4df6f7d566c769a",
+          "file": "dashboard.spec.ts",
+          "line": 48,
+          "column": 5
+        },
+        {
+          "title": "That Create New Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 5931,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:30.026Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-c258089c7640a5b90cba",
+          "file": "dashboard.spec.ts",
+          "line": 58,
+          "column": 5
+        },
+        {
+          "title": "That Duplicate Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 6153,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:35.976Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-d2b0af1fbe7b3307513a",
+          "file": "dashboard.spec.ts",
+          "line": 69,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Dashboard2.spec.ts",
+      "file": "Dashboard2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Set Columns feature on Edit Layout is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 10758,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:42.159Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-6138f194829d37dddfea",
+          "file": "Dashboard2.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Add and Remove Dashlet features on Edit Layout are working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 17177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:05:52.930Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-93d06ee508fcd905d3f3",
+          "file": "Dashboard2.spec.ts",
+          "line": 74,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView.spec.ts",
+      "file": "DetailView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That quick_create context is correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 9128,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:06:10.134Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-81511c44097ee8596c22",
+          "file": "DetailView.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "That layout tabs selection is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 89514,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 80000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Purchasing Information')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Purchasing Information')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 80000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Purchasing Information')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Purchasing Information')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:80:58",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 58,
+                      "line": 80
+                    },
+                    "snippet": "  78 |   const salesPanels = await page.locator('[data-test=\"sub-panel\"]').count();\n  79 |\n> 80 |   await expect(page.getByText(\"Purchasing Information\")).toBeVisible();\n     |                                                          ^\n  81 |   expect(generalPanels).not.toEqual(salesPanels);\n  82 |\n  83 |   //Go back to General tab"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 58,
+                        "line": 80
+                      },
+                      "message": "Error: \u001b[31mTimed out 80000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Purchasing Information')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Purchasing Information')\u001b[22m\n\n\n  78 |   const salesPanels = await page.locator('[data-test=\"sub-panel\"]').count();\n  79 |\n> 80 |   await expect(page.getByText(\"Purchasing Information\")).toBeVisible();\n     |                                                          ^\n  81 |   expect(generalPanels).not.toEqual(salesPanels);\n  82 |\n  83 |   //Go back to General tab\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:80:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:06:19.270Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 58,
+                    "line": 80
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 90609,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 80000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Purchasing Information')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Purchasing Information')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 80000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Purchasing Information')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Purchasing Information')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:80:58",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 58,
+                      "line": 80
+                    },
+                    "snippet": "  78 |   const salesPanels = await page.locator('[data-test=\"sub-panel\"]').count();\n  79 |\n> 80 |   await expect(page.getByText(\"Purchasing Information\")).toBeVisible();\n     |                                                          ^\n  81 |   expect(generalPanels).not.toEqual(salesPanels);\n  82 |\n  83 |   //Go back to General tab"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 58,
+                        "line": 80
+                      },
+                      "message": "Error: \u001b[31mTimed out 80000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Purchasing Information')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Purchasing Information')\u001b[22m\n\n\n  78 |   const salesPanels = await page.locator('[data-test=\"sub-panel\"]').count();\n  79 |\n> 80 |   await expect(page.getByText(\"Purchasing Information\")).toBeVisible();\n     |                                                          ^\n  81 |   expect(generalPanels).not.toEqual(salesPanels);\n  82 |\n  83 |   //Go back to General tab\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:80:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-01-29T06:07:49.504Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-layout-tabs-selection-is-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 58,
+                    "line": 80
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-e4e011b884fb0ea4e157",
+          "file": "DetailView.spec.ts",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "title": "That Status badge is visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 5617,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:09:21.288Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-bcf8274e3b1f6f705ab5",
+          "file": "DetailView.spec.ts",
+          "line": 90,
+          "column": 5
+        },
+        {
+          "title": "That field with editable = false has been rendered as readonly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 6156,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:09:27.015Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-af712207651e2097baa1",
+          "file": "DetailView.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "That validations is working correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 6759,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:09:33.180Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-b2cdb9f40e0b7e4dc065",
+          "file": "DetailView.spec.ts",
+          "line": 124,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView2.spec.ts",
+      "file": "DetailView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Save, Edit & Delete are working correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 12114,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:09:39.953Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-83bee7ffbfcea48d4aa2",
+          "file": "DetailView2.spec.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "That Return to List button is exist and working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 6455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:09:52.081Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-448e5a030b59150ffc6d",
+          "file": "DetailView2.spec.ts",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "title": "That Image input has been rendered and working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 5714,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:09:58.541Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-62f27e3d9877b31dbfd0",
+          "file": "DetailView2.spec.ts",
+          "line": 100,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ListView.spec.ts",
+      "file": "ListView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That layout tabs interact correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 5643,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:10:04.272Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-46b96d33dd918d4d8fc5",
+          "file": "ListView.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That pagination control works correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 11690,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:10:09.923Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-15724abdcbb909c11e79",
+          "file": "ListView.spec.ts",
+          "line": 45,
+          "column": 5
+        },
+        {
+          "title": "That limit and offset controls work correcty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 6678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:10:21.620Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-ca485fb4cec427d47e6d",
+          "file": "ListView.spec.ts",
+          "line": 124,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ListView2.spec.ts",
+      "file": "ListView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Basic Filters work correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 18060,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:10:28.311Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-b55ac7749d6711536eb6",
+          "file": "ListView2.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Advansed Filters work correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 6844,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:10:46.379Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-1fa15712e6b92eebd741",
+          "file": "ListView2.spec.ts",
+          "line": 128,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "SubPanels.spec.ts",
+      "file": "SubPanels.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That collapse feature is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 7209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:10:53.232Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-c9dc6b3b3aec25d4315a",
+          "file": "SubPanels.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That remove relation is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 12220,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:11:00.454Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-eaa4a7a0f9bf4865cc77",
+          "file": "SubPanels.spec.ts",
+          "line": 56,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ThemeEditor.spec.ts",
+      "file": "ThemeEditor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That theme presets list is correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 5284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:11:12.687Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-64fecde7a0b4862250a0",
+          "file": "ThemeEditor.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Theme Options tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 6654,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:11:17.977Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-a0fa7c821176701e6ba5",
+          "file": "ThemeEditor.spec.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Colors tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 5944,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T06:11:24.642Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-b16801458389abf994ac",
+          "file": "ThemeEditor.spec.ts",
+          "line": 83,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-29T06:05:05.328Z",
+    "duration": 690011.511,
+    "expected": 33,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
