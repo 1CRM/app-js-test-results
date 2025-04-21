@@ -1,0 +1,2107 @@
+{
+  "config": {
+    "configFile": "/home/crmadmin/app-js/packages/app-js/playwright.config.ts",
+    "rootDir": "/home/crmadmin/app-js/packages/app-js/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 10
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.1",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4295,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:05.287Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-60f085b113a677673906",
+          "file": "auth.setup.ts",
+          "line": 14,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "axe.analyze.spec.ts",
+      "file": "axe.analyze.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "About",
+          "file": "axe.analyze.spec.ts",
+          "line": 70,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "timedOut",
+                      "duration": 31199275,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:54:6",
+                        "location": {
+                          "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                          "column": 6,
+                          "line": 54
+                        },
+                        "snippet": "  52 | ];\n  53 |\n> 54 | test.beforeEach(async ({ page }) => {\n     |      ^\n  55 |   // test.setTimeout(30_000);\n  56 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  57 |   await page.route("
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 6,
+                            "line": 54
+                          },
+                          "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  52 | ];\n  53 |\n> 54 | test.beforeEach(async ({ page }) => {\n     |      ^\n  55 |   // test.setTimeout(30_000);\n  56 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  57 |   await page.route(\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:54:6"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 14,
+                            "line": 64
+                          },
+                          "message": "TypeError: Cannot read properties of null (reading 'evaluate')\n\n  62 |\n  63 | test.afterEach(async ({ page }) => {\n> 64 |   await page.evaluate(() => {\n     |              ^\n  65 |     localStorage.clear();\n  66 |     sessionStorage.clear();\n  67 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:64:14"
+                        },
+                        {
+                          "message": "Error: browserContext.newPage: Test timeout of 300000ms exceeded."
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T06:05:13.463Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                        "column": 6,
+                        "line": 54
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-9c2678bfc0f216c4d911",
+              "file": "axe.analyze.spec.ts",
+              "line": 74,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Login",
+          "file": "axe.analyze.spec.ts",
+          "line": 88,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "status": "timedOut",
+                      "duration": 1329553,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 6,
+                            "line": 63
+                          },
+                          "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n  61 | });\n  62 |\n> 63 | test.afterEach(async ({ page }) => {\n     |      ^\n  64 |   await page.evaluate(() => {\n  65 |     localStorage.clear();\n  66 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:63:6"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 16,
+                            "line": 96
+                          },
+                          "message": "Error: page.waitForSelector: Test ended.\nCall log:\n  \u001b[2m- waiting for locator('.login-page') to be visible\u001b[22m\n\n\n  94 |   }) => {\n  95 |     await page.goto(\"./\");\n> 96 |     await page.waitForSelector(\".login-page\");\n     |                ^\n  97 |     await page.waitForTimeout(2000);\n  98 |     await page.locator(\".mobile-back-arrow > .of-icon > svg\").click();\n  99 |\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:96:16"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 14,
+                            "line": 64
+                          },
+                          "message": "Error: page.evaluate: Test ended.\n\n  62 |\n  63 | test.afterEach(async ({ page }) => {\n> 64 |   await page.evaluate(() => {\n     |              ^\n  65 |     localStorage.clear();\n  66 |     sessionStorage.clear();\n  67 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:64:14"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T14:46:33.454Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-9dbe1fdb80d3ee325403",
+              "file": "axe.analyze.spec.ts",
+              "line": 92,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Recover Your Password",
+          "file": "axe.analyze.spec.ts",
+          "line": 107,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "status": "passed",
+                      "duration": 42741,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:23:14.093Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-a1361d524603a281af80",
+              "file": "axe.analyze.spec.ts",
+              "line": 111,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Search Results",
+          "file": "axe.analyze.spec.ts",
+          "line": 125,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "status": "timedOut",
+                      "duration": 332355,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 16,
+                            "line": 130
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.subpanels') to be visible\u001b[22m\n\n\n  128 |   }) => {\n  129 |     await page.goto(\"./?module=Home&action=UnifiedSearch&query_string=1crm\");\n> 130 |     await page.waitForSelector(\".subpanels\");\n      |                ^\n  131 |     await page.waitForTimeout(3000);\n  132 |\n  133 |     const accessibilityScanResults = await new AxeBuilder({ page })\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:130:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:23:58.508Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-c1e46e7c7ca9a7496781",
+              "file": "axe.analyze.spec.ts",
+              "line": 126,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Company Directory",
+          "file": "axe.analyze.spec.ts",
+          "line": 140,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "status": "passed",
+                      "duration": 11892,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:29:33.916Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-a449843781e2a2905fc9",
+              "file": "axe.analyze.spec.ts",
+              "line": 141,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Calendar",
+          "file": "axe.analyze.spec.ts",
+          "line": 155,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "status": "passed",
+                      "duration": 28055,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:29:46.472Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-e5c53c235e921153ceea",
+              "file": "axe.analyze.spec.ts",
+              "line": 156,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Dashboards",
+          "file": "axe.analyze.spec.ts",
+          "line": 175,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "status": "failed",
+                      "duration": 18499,
+                      "error": {
+                        "message": "Error: Dashboard link: ?action=index&module=Home&layout=5f890338-a783-725d-a72b-6724926684b2\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 48\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure elements that have scrollable content are accessible by keyboard\",\u001b[39m\n\u001b[31m+     \"help\": \"Scrollable region must have keyboard access\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.8/scrollable-region-focusable?application=playwright\",\u001b[39m\n\u001b[31m+     \"id\": \"scrollable-region-focusable\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"focusable-content\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element should have focusable content\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"focusable-element\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element should be focusable\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   Element should have focusable content\u001b[39m\n\u001b[31m+   Element should be focusable\",\u001b[39m\n\u001b[31m+         \"html\": \"<div class=\\\"of-data-table of--density-2\\\" id=\\\"of-data-table-6\\\" style=\\\"--of-table-columns: auto auto auto auto auto;\\\">\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \"#of-data-table-6\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.keyboard\",\u001b[39m\n\u001b[31m+       \"wcag2a\",\u001b[39m\n\u001b[31m+       \"wcag211\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT4.a\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.2.1.1\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: Dashboard link: ?action=index&module=Home&layout=5f890338-a783-725d-a72b-6724926684b2\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 48\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure elements that have scrollable content are accessible by keyboard\",\u001b[39m\n\u001b[31m+     \"help\": \"Scrollable region must have keyboard access\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.8/scrollable-region-focusable?application=playwright\",\u001b[39m\n\u001b[31m+     \"id\": \"scrollable-region-focusable\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"focusable-content\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element should have focusable content\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"focusable-element\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element should be focusable\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   Element should have focusable content\u001b[39m\n\u001b[31m+   Element should be focusable\",\u001b[39m\n\u001b[31m+         \"html\": \"<div class=\\\"of-data-table of--density-2\\\" id=\\\"of-data-table-6\\\" style=\\\"--of-table-columns: auto auto auto auto auto;\\\">\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \"#of-data-table-6\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.keyboard\",\u001b[39m\n\u001b[31m+       \"wcag2a\",\u001b[39m\n\u001b[31m+       \"wcag211\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT4.a\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.2.1.1\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:204:9",
+                        "location": {
+                          "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                          "column": 9,
+                          "line": 204
+                        },
+                        "snippet": "  202 |         accessibilityScanResults.violations,\n  203 |         \"Dashboard link: \" + link\n> 204 |       ).toEqual([]);\n      |         ^\n  205 |     }\n  206 |   });\n  207 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 9,
+                            "line": 204
+                          },
+                          "message": "Error: Dashboard link: ?action=index&module=Home&layout=5f890338-a783-725d-a72b-6724926684b2\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 48\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure elements that have scrollable content are accessible by keyboard\",\u001b[39m\n\u001b[31m+     \"help\": \"Scrollable region must have keyboard access\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.8/scrollable-region-focusable?application=playwright\",\u001b[39m\n\u001b[31m+     \"id\": \"scrollable-region-focusable\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"focusable-content\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element should have focusable content\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"focusable-element\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element should be focusable\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   Element should have focusable content\u001b[39m\n\u001b[31m+   Element should be focusable\",\u001b[39m\n\u001b[31m+         \"html\": \"<div class=\\\"of-data-table of--density-2\\\" id=\\\"of-data-table-6\\\" style=\\\"--of-table-columns: auto auto auto auto auto;\\\">\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \"#of-data-table-6\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.keyboard\",\u001b[39m\n\u001b[31m+       \"wcag2a\",\u001b[39m\n\u001b[31m+       \"wcag211\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT4.a\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.2.1.1\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  202 |         accessibilityScanResults.violations,\n  203 |         \"Dashboard link: \" + link\n> 204 |       ).toEqual([]);\n      |         ^\n  205 |     }\n  206 |   });\n  207 | });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:204:9"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:30:14.553Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                        "column": 9,
+                        "line": 204
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-1176e7a7ff0af69f99db",
+              "file": "axe.analyze.spec.ts",
+              "line": 176,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "List View",
+          "file": "axe.analyze.spec.ts",
+          "line": 209,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "status": "passed",
+                      "duration": 406450,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:30:33.749Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-3a4c16c6887de9e8de2e",
+              "file": "axe.analyze.spec.ts",
+              "line": 210,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Detail/Edit View",
+          "file": "axe.analyze.spec.ts",
+          "line": 239,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not have any automatically detectable WCAG A or AA violations",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "status": "failed",
+                      "duration": 101483,
+                      "error": {
+                        "message": "Error: EditView module: Emails\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 59\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensures every ARIA input field has an accessible name\",\u001b[39m\n\u001b[31m+     \"help\": \"ARIA input fields must have an accessible name\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.8/aria-input-field-name?application=playwright\",\u001b[39m\n\u001b[31m+     \"id\": \"aria-input-field-name\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"aria-label\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"aria-label attribute does not exist or is empty\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"aria-labelledby\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": Object {\u001b[39m\n\u001b[31m+               \"messageKey\": \"noAttr\",\u001b[39m\n\u001b[31m+             },\u001b[39m\n\u001b[31m+             \"id\": \"non-empty-title\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element has no title attribute\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   aria-label attribute does not exist or is empty\u001b[39m\n\u001b[31m+   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\u001b[39m\n\u001b[31m+   Element has no title attribute\",\u001b[39m\n\u001b[31m+         \"html\": \"<div contenteditable=\\\"true\\\" role=\\\"textbox\\\" translate=\\\"no\\\" class=\\\"tiptap ProseMirror\\\" tabindex=\\\"0\\\">\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \".tiptap\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.aria\",\u001b[39m\n\u001b[31m+       \"wcag2a\",\u001b[39m\n\u001b[31m+       \"wcag412\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT5.c\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.4.1.2\",\u001b[39m\n\u001b[31m+       \"ACT\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: EditView module: Emails\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 59\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensures every ARIA input field has an accessible name\",\u001b[39m\n\u001b[31m+     \"help\": \"ARIA input fields must have an accessible name\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.8/aria-input-field-name?application=playwright\",\u001b[39m\n\u001b[31m+     \"id\": \"aria-input-field-name\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"aria-label\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"aria-label attribute does not exist or is empty\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"aria-labelledby\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": Object {\u001b[39m\n\u001b[31m+               \"messageKey\": \"noAttr\",\u001b[39m\n\u001b[31m+             },\u001b[39m\n\u001b[31m+             \"id\": \"non-empty-title\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element has no title attribute\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   aria-label attribute does not exist or is empty\u001b[39m\n\u001b[31m+   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\u001b[39m\n\u001b[31m+   Element has no title attribute\",\u001b[39m\n\u001b[31m+         \"html\": \"<div contenteditable=\\\"true\\\" role=\\\"textbox\\\" translate=\\\"no\\\" class=\\\"tiptap ProseMirror\\\" tabindex=\\\"0\\\">\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \".tiptap\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.aria\",\u001b[39m\n\u001b[31m+       \"wcag2a\",\u001b[39m\n\u001b[31m+       \"wcag412\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT5.c\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.4.1.2\",\u001b[39m\n\u001b[31m+       \"ACT\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:292:9",
+                        "location": {
+                          "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                          "column": 9,
+                          "line": 292
+                        },
+                        "snippet": "  290 |         accessibilityScanResults.violations,\n  291 |         \"EditView module: \" + module\n> 292 |       ).toEqual([]);\n      |         ^\n  293 |     }\n  294 |   });\n  295 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                            "column": 9,
+                            "line": 292
+                          },
+                          "message": "Error: EditView module: Emails\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 59\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensures every ARIA input field has an accessible name\",\u001b[39m\n\u001b[31m+     \"help\": \"ARIA input fields must have an accessible name\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.8/aria-input-field-name?application=playwright\",\u001b[39m\n\u001b[31m+     \"id\": \"aria-input-field-name\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"aria-label\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"aria-label attribute does not exist or is empty\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": null,\u001b[39m\n\u001b[31m+             \"id\": \"aria-labelledby\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": Object {\u001b[39m\n\u001b[31m+               \"messageKey\": \"noAttr\",\u001b[39m\n\u001b[31m+             },\u001b[39m\n\u001b[31m+             \"id\": \"non-empty-title\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element has no title attribute\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   aria-label attribute does not exist or is empty\u001b[39m\n\u001b[31m+   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\u001b[39m\n\u001b[31m+   Element has no title attribute\",\u001b[39m\n\u001b[31m+         \"html\": \"<div contenteditable=\\\"true\\\" role=\\\"textbox\\\" translate=\\\"no\\\" class=\\\"tiptap ProseMirror\\\" tabindex=\\\"0\\\">\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \".tiptap\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.aria\",\u001b[39m\n\u001b[31m+       \"wcag2a\",\u001b[39m\n\u001b[31m+       \"wcag412\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT5.c\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.4.1.2\",\u001b[39m\n\u001b[31m+       \"ACT\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  290 |         accessibilityScanResults.violations,\n  291 |         \"EditView module: \" + module\n> 292 |       ).toEqual([]);\n      |         ^\n  293 |     }\n  294 |   });\n  295 | });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts:292:9"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:37:20.321Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/axe.analyze.spec.ts",
+                        "column": 9,
+                        "line": 292
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "04899d29fc169e4e84b6-3d1414d184eba715c892",
+              "file": "axe.analyze.spec.ts",
+              "line": 240,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dashboard.spec.ts",
+      "file": "dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Dashboard elements were properly rendered",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "timedOut",
+                  "duration": 1286080,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { expect, test } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { expect, test } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.196Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-90451cbc94dbc47b587b",
+          "file": "dashboard.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Edit Dashboard Info item is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "status": "timedOut",
+                  "duration": 1274867,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts",
+                        "column": 14,
+                        "line": 42
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/\", waiting until \"load\"\u001b[22m\n\n\n  40 |\n  41 | test(\"That Edit Dashboard Info item is working\", async ({ page }) => {\n> 42 |   await page.goto(\"./\");\n     |              ^\n  43 |\n  44 |   await page\n  45 |     .locator(\".app-bar-sub-menu\")\n\n    at /home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts:42:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.077Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-48ea563d43e5361ca078",
+          "file": "dashboard.spec.ts",
+          "line": 41,
+          "column": 5
+        },
+        {
+          "title": "That Delete Dashboard item is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 25,
+                  "status": "timedOut",
+                  "duration": 373815,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts",
+                        "column": 44,
+                        "line": 60
+                      },
+                      "message": "Error: locator.click: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for getByText('Delete Dashboard')\u001b[22m\n\n\n  58 |     .getByRole(\"tab\", { name: \"more alt\" })\n  59 |     .click();\n> 60 |   await page.getByText(\"Delete Dashboard\").click();\n     |                                            ^\n  61 |\n  62 |   page.on(\"dialog\", async (dialog) => {\n  63 |     expect(dialog.type()).toBe(\"confirm\");\n\n    at /home/crmadmin/app-js/packages/app-js/tests/dashboard.spec.ts:60:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:23:13.937Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-3df3a4df6f7d566c769a",
+          "file": "dashboard.spec.ts",
+          "line": 54,
+          "column": 5
+        },
+        {
+          "title": "That Create New Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 28,
+                  "status": "passed",
+                  "duration": 7656,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:29:33.788Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-c258089c7640a5b90cba",
+          "file": "dashboard.spec.ts",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "title": "That Duplicate Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 28,
+                  "status": "passed",
+                  "duration": 9223,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:29:42.231Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-d2b0af1fbe7b3307513a",
+          "file": "dashboard.spec.ts",
+          "line": 81,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Dashboard2.spec.ts",
+      "file": "Dashboard2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Set Columns feature on Edit Layout is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "timedOut",
+                  "duration": 1637878,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { expect, test } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { expect, test } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.070Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-6138f194829d37dddfea",
+          "file": "Dashboard2.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Add and Remove Dashlet features on Edit Layout are working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "status": "timedOut",
+                  "duration": 1274894,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts",
+                        "column": 14,
+                        "line": 83
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/\", waiting until \"load\"\u001b[22m\n\n\n  81 |   page\n  82 | }) => {\n> 83 |   await page.goto(\"./\");\n     |              ^\n  84 |\n  85 |   await page\n  86 |     .locator(\".app-bar-sub-menu\")\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts:83:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashboard2.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.159Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-93d06ee508fcd905d3f3",
+          "file": "Dashboard2.spec.ts",
+          "line": 80,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Dashlets.spec.ts",
+      "file": "Dashlets.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That 'Notepad' dashlet is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "timedOut",
+                  "duration": 1637850,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { expect, test } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { expect, test } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.244Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ee767093e28c6063669f-2abebb50ae9a8208db7d",
+          "file": "Dashlets.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView.spec.ts",
+      "file": "DetailView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That quick_create context is correct",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "timedOut",
+                  "duration": 840575,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:3:6"
+                    },
+                    {
+                      "message": "TypeError: Cannot read properties of null (reading 'newPage')"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Test ended."
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.443Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-81511c44097ee8596c22",
+          "file": "DetailView.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "That layout tabs selection is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "status": "timedOut",
+                  "duration": 1274981,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 14,
+                        "line": 62
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/?module=Accounts&action=index&layout=Browse\", waiting until \"load\"\u001b[22m\n\n\n  60 |\n  61 | test(\"That layout tabs selection is working\", async ({ page }) => {\n> 62 |   await page.goto(\"./?module=Accounts&action=index&layout=Browse\");\n     |              ^\n  63 |   await page\n  64 |     .locator('[data-test=\"data-table\"]')\n  65 |     .locator(\".of-data-table-row\")\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:62:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.182Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-e4e011b884fb0ea4e157",
+          "file": "DetailView.spec.ts",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "title": "That Status badge is visible",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 24,
+                  "status": "timedOut",
+                  "duration": 362536,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 14,
+                        "line": 100
+                      },
+                      "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.summary-subheader .of-field') to be visible\u001b[22m\n\n\n   98 |     .first()\n   99 |     .click();\n> 100 |   await page.waitForSelector(\".summary-subheader .of-field\");\n      |              ^\n  101 |\n  102 |   await expect(\n  103 |     page\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:100:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:23:13.907Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-bcf8274e3b1f6f705ab5",
+          "file": "DetailView.spec.ts",
+          "line": 90,
+          "column": 5
+        },
+        {
+          "title": "That field with editable = false has been rendered as readonly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 26,
+                  "status": "passed",
+                  "duration": 13222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:29:33.804Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-af712207651e2097baa1",
+          "file": "DetailView.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "That validations is working correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 26,
+                  "status": "passed",
+                  "duration": 8172,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:29:47.815Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-b2cdb9f40e0b7e4dc065",
+          "file": "DetailView.spec.ts",
+          "line": 124,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView2.spec.ts",
+      "file": "DetailView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Save, Edit & Delete are working correct",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "status": "timedOut",
+                  "duration": 1169746,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:12.890Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-83bee7ffbfcea48d4aa2",
+          "file": "DetailView2.spec.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "That Return to List button is exist and working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "status": "timedOut",
+                  "duration": 1274881,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 14,
+                        "line": 90
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/?module=Accounts&action=index&layout=Browse\", waiting until \"load\"\u001b[22m\n\n\n  88 |\n  89 | test(\"That Return to List button is exist and working\", async ({ page }) => {\n> 90 |   await page.goto(\"./?module=Accounts&action=index&layout=Browse\");\n     |              ^\n  91 |\n  92 |   await page.locator(\".of-data-table-row\").locator(\".of-link\").first().click();\n  93 |   await page.waitForSelector('[data-test=\"section\"]');\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:90:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.259Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-448e5a030b59150ffc6d",
+          "file": "DetailView2.spec.ts",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "title": "That Image input has been rendered and working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "status": "timedOut",
+                  "duration": 373198,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 14,
+                        "line": 111
+                      },
+                      "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-test=\"section\"]') to be visible\u001b[22m\n\n\n  109 |     ?.click();\n  110 |\n> 111 |   await page.waitForSelector('[data-test=\"section\"]');\n      |              ^\n  112 |   await page.waitForSelector(\".summary-image\");\n  113 |   //await page.waitForSelector(\"img\");\n  114 |   await page.locator(\"#app-content\").locator(\".summary-image\").click();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:111:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:23:13.903Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-62f27e3d9877b31dbfd0",
+          "file": "DetailView2.spec.ts",
+          "line": 100,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ListView.spec.ts",
+      "file": "ListView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That layout tabs interact correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "timedOut",
+                  "duration": 1272534,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.249Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-46b96d33dd918d4d8fc5",
+          "file": "ListView.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That pagination control works correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "status": "timedOut",
+                  "duration": 1274877,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 14,
+                        "line": 46
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/?module=Accounts&action=index&layout=Browse\", waiting until \"load\"\u001b[22m\n\n\n  44 |\n  45 | test(\"That pagination control works correctly\", async ({ page }) => {\n> 46 |   await page.goto(\"./?module=Accounts&action=index&layout=Browse\");\n     |              ^\n  47 |   const firstPageLink = await page\n  48 |     .locator('[data-test=\"data-table\"]')\n  49 |     .locator(\".of-data-table-row\")\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:46:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.483Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-15724abdcbb909c11e79",
+          "file": "ListView.spec.ts",
+          "line": 45,
+          "column": 5
+        },
+        {
+          "title": "That limit and offset controls work correcty",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 23,
+                  "status": "timedOut",
+                  "duration": 373192,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 14,
+                        "line": 138
+                      },
+                      "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('[data-test=\"loading-indicator-header\"]') to be hidden\u001b[22m\n\n\n  136 |   await page.getByRole(\"spinbutton\", { name: \"Per Page\" }).fill(\"10\");\n  137 |   await page.getByRole(\"button\", { name: \"Update\" }).click();\n> 138 |   await page.waitForSelector('[data-test=\"loading-indicator-header\"]', {\n      |              ^\n  139 |     state: \"hidden\"\n  140 |   });\n  141 |   await page.waitForSelector(\".of-data-table.list-view-data-loading\", {\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:138:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:23:13.885Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-ca485fb4cec427d47e6d",
+          "file": "ListView.spec.ts",
+          "line": 124,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ListView2.spec.ts",
+      "file": "ListView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Basic Filters work correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "status": "timedOut",
+                  "duration": 1286095,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.263Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-b55ac7749d6711536eb6",
+          "file": "ListView2.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Advansed Filters work correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "status": "timedOut",
+                  "duration": 1274881,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                        "column": 14,
+                        "line": 129
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/?module=Contacts&action=index&layout=Browse\", waiting until \"load\"\u001b[22m\n\n\n  127 |\n  128 | test(\"That Advansed Filters work correctly\", async ({ page }) => {\n> 129 |   await page.goto(\"./?module=Contacts&action=index&layout=Browse\");\n      |              ^\n  130 |   await page.waitForSelector(\".of-data-table-row\");\n  131 |   await page.waitForSelector('[data-test=\"loading-indicator-header\"]', {\n  132 |     state: \"hidden\"\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:129:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.465Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-1fa15712e6b92eebd741",
+          "file": "ListView2.spec.ts",
+          "line": 128,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "SubPanels.spec.ts",
+      "file": "SubPanels.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That collapse feature is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "status": "timedOut",
+                  "duration": 1637850,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.182Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-c9dc6b3b3aec25d4315a",
+          "file": "SubPanels.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That remove relation is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "status": "timedOut",
+                  "duration": 1274874,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 14,
+                        "line": 57
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/?module=Opportunities&action=index\", waiting until \"load\"\u001b[22m\n\n\n  55 |\n  56 | test(\"That remove relation is working\", async ({ page }) => {\n> 57 |   await page.goto(\"./?module=Opportunities&action=index\");\n     |              ^\n  58 |   await page\n  59 |     .locator('[data-test=\"data-table\"]')\n  60 |     .locator(\".of-data-table-row\")\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:57:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.480Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-eaa4a7a0f9bf4865cc77",
+          "file": "SubPanels.spec.ts",
+          "line": 56,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ThemeEditor.spec.ts",
+      "file": "ThemeEditor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That theme presets list is correct",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "status": "timedOut",
+                  "duration": 3717584,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:3:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                      "column": 6,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\","
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                        "column": 6,
+                        "line": 3
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  1 | import { test, expect } from \"@playwright/test\";\n  2 |\n> 3 | test.beforeEach(async ({ page }) => {\n    |      ^\n  4 |   await page.route(\"**/*.{png,jpg,jpeg}\", (route) => route.abort());\n  5 |   await page.route(\n  6 |     \"https://fonts.googleapis.com/css?family=Roboto:400,700\",\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:3:6"
+                    },
+                    {
+                      "message": "Error: browser.newContext: Target crashed "
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T06:05:13.168Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                    "column": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-64fecde7a0b4862250a0",
+          "file": "ThemeEditor.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Theme Options tab",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "status": "timedOut",
+                  "duration": 1274895,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                        "column": 6,
+                        "line": 11
+                      },
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n   9 | });\n  10 |\n> 11 | test.afterEach(async ({ page }) => {\n     |      ^\n  12 |   await page.evaluate(() => {\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:11:6"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                        "column": 14,
+                        "line": 47
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://1crm9-demo.1crmcloud.com/app/\", waiting until \"load\"\u001b[22m\n\n\n  45 |\n  46 | test(\"Create Theme form elements - Theme Options tab\", async ({ page }) => {\n> 47 |   await page.goto(\"./\");\n     |              ^\n  48 |   await page.locator(\"div.user-tools\").first().click();\n  49 |   await page.getByText(\"Theme Editor\").click();\n  50 |\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:47:14"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                        "column": 14,
+                        "line": 12
+                      },
+                      "message": "Error: page.evaluate: Test ended.\n\n  10 |\n  11 | test.afterEach(async ({ page }) => {\n> 12 |   await page.evaluate(() => {\n     |              ^\n  13 |     localStorage.clear();\n  14 |     sessionStorage.clear();\n  15 |   });\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T14:46:33.366Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-a0fa7c821176701e6ba5",
+          "file": "ThemeEditor.spec.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Colors tab",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 22,
+                  "status": "timedOut",
+                  "duration": 373716,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                        "column": 40,
+                        "line": 86
+                      },
+                      "message": "Error: locator.click: Test timeout of 300000ms exceeded.\nCall log:\n  \u001b[2m- waiting for getByText('Theme Editor')\u001b[22m\n\n\n  84 |   await page.goto(\"./\");\n  85 |   await page.locator(\"div.user-tools\").first().click();\n> 86 |   await page.getByText(\"Theme Editor\").click();\n     |                                        ^\n  87 |\n  88 |   await page.waitForSelector(\".outer > .loading-indicator\", {\n  89 |     state: \"hidden\"\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:86:40"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:23:13.904Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-b16801458389abf994ac",
+          "file": "ThemeEditor.spec.ts",
+          "line": 83,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-04-21T06:05:04.565Z",
+    "duration": 34437325.513000004,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 27,
+    "flaky": 0
+  }
+}
