@@ -1,0 +1,1339 @@
+{
+  "config": {
+    "configFile": "/home/crmadmin/app-js/packages/app-js/playwright.config.ts",
+    "rootDir": "/home/crmadmin/app-js/packages/app-js/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 9
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 9
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 9
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [
+          "axe.*"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.2",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5125,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:07.180Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-60f085b113a677673906",
+          "file": "auth.setup.ts",
+          "line": 14,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "dashboard.spec.ts",
+      "file": "dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Dashboard elements were properly rendered",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33760,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:17.228Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-90451cbc94dbc47b587b",
+          "file": "dashboard.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Edit Dashboard Info item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30408,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:51.491Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-48ea563d43e5361ca078",
+          "file": "dashboard.spec.ts",
+          "line": 40,
+          "column": 5
+        },
+        {
+          "title": "That Create New Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29238,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:21.939Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-c258089c7640a5b90cba",
+          "file": "dashboard.spec.ts",
+          "line": 66,
+          "column": 5
+        },
+        {
+          "title": "That Duplicate Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14424,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:51.232Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-d2b0af1fbe7b3307513a",
+          "file": "dashboard.spec.ts",
+          "line": 80,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Dashboard2.spec.ts",
+      "file": "Dashboard2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Set Columns feature on Edit Layout is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 70047,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:17.087Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-6138f194829d37dddfea",
+          "file": "Dashboard2.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Add and Remove Dashlet features on Edit Layout are working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 49357,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:27.703Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-93d06ee508fcd905d3f3",
+          "file": "Dashboard2.spec.ts",
+          "line": 80,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Dashlets.spec.ts",
+      "file": "Dashlets.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That 'Notepad' dashlet is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 41170,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: getByLabel('Notepad').locator('.dashlet-title') resolved to 3 elements:\n    1) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').first()\n    2) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(1)\n    3) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(2)\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Notepad').locator('.dashlet-title')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: getByLabel('Notepad').locator('.dashlet-title') resolved to 3 elements:\n    1) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').first()\n    2) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(1)\n    3) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(2)\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Notepad').locator('.dashlet-title')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:55:62",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                      "column": 62,
+                      "line": 55
+                    },
+                    "snippet": "  53 |\n  54 |   await notepadOuter.locator(\"#jotpad\").fill(testText);\n> 55 |   await page.getByLabel(\"Notepad\").locator(\".dashlet-title\").click();\n     |                                                              ^\n  56 |   await page.waitForTimeout(1000);\n  57 |\n  58 |   await page.getByLabel(\"Notepad\").locator(\"[data-name='refresh']\").click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                        "column": 62,
+                        "line": 55
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: getByLabel('Notepad').locator('.dashlet-title') resolved to 3 elements:\n    1) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').first()\n    2) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(1)\n    3) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(2)\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Notepad').locator('.dashlet-title')\u001b[22m\n\n\n  53 |\n  54 |   await notepadOuter.locator(\"#jotpad\").fill(testText);\n> 55 |   await page.getByLabel(\"Notepad\").locator(\".dashlet-title\").click();\n     |                                                              ^\n  56 |   await page.waitForTimeout(1000);\n  57 |\n  58 |   await page.getByLabel(\"Notepad\").locator(\"[data-name='refresh']\").click();\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:55:62"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:16.922Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/Dashlets-That-Notepad-dashlet-is-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                    "column": 62,
+                    "line": 55
+                  }
+                },
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 44851,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: getByLabel('Notepad').locator('.dashlet-title') resolved to 3 elements:\n    1) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').first()\n    2) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(1)\n    3) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(2)\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Notepad').locator('.dashlet-title')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: getByLabel('Notepad').locator('.dashlet-title') resolved to 3 elements:\n    1) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').first()\n    2) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(1)\n    3) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(2)\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Notepad').locator('.dashlet-title')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:55:62",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                      "column": 62,
+                      "line": 55
+                    },
+                    "snippet": "  53 |\n  54 |   await notepadOuter.locator(\"#jotpad\").fill(testText);\n> 55 |   await page.getByLabel(\"Notepad\").locator(\".dashlet-title\").click();\n     |                                                              ^\n  56 |   await page.waitForTimeout(1000);\n  57 |\n  58 |   await page.getByLabel(\"Notepad\").locator(\"[data-name='refresh']\").click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                        "column": 62,
+                        "line": 55
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: getByLabel('Notepad').locator('.dashlet-title') resolved to 3 elements:\n    1) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').first()\n    2) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(1)\n    3) <div draggable=\"true\" data-v-0b9fbc10=\"\" class=\"dashlet-title\">…</div> aka getByText('NotepadDouble-click below to').nth(2)\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Notepad').locator('.dashlet-title')\u001b[22m\n\n\n  53 |\n  54 |   await notepadOuter.locator(\"#jotpad\").fill(testText);\n> 55 |   await page.getByLabel(\"Notepad\").locator(\".dashlet-title\").click();\n     |                                                              ^\n  56 |   await page.waitForTimeout(1000);\n  57 |\n  58 |   await page.getByLabel(\"Notepad\").locator(\"[data-name='refresh']\").click();\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:55:62"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-07-31T06:06:04.110Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/Dashlets-That-Notepad-dashlet-is-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/Dashlets-That-Notepad-dashlet-is-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                    "column": 62,
+                    "line": 55
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ee767093e28c6063669f-2abebb50ae9a8208db7d",
+          "file": "Dashlets.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView.spec.ts",
+      "file": "DetailView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That quick_create context is correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 52095,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:17.831Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-81511c44097ee8596c22",
+          "file": "DetailView.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "That layout tabs selection is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 45983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:10.397Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-e4e011b884fb0ea4e157",
+          "file": "DetailView.spec.ts",
+          "line": 69,
+          "column": 5
+        },
+        {
+          "title": "That Status badge is visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 11938,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:56.400Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-bcf8274e3b1f6f705ab5",
+          "file": "DetailView.spec.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "That field with editable = false has been rendered as readonly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 10317,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:07:08.369Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-af712207651e2097baa1",
+          "file": "DetailView.spec.ts",
+          "line": 118,
+          "column": 5
+        },
+        {
+          "title": "That validations is working correct",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
+                  "status": "timedOut",
+                  "duration": 300068,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 14,
+                        "line": 138
+                      },
+                      "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"email1\"]') to be visible\u001b[22m\n\n\n  136 |     .getByRole(\"button\", { name: \"Create\" })\n  137 |     .click();\n> 138 |   await page.waitForSelector('[data-test=\"email1\"]');\n      |              ^\n  139 |\n  140 |   await page.locator(\"#save-btn-header-button\").click();\n  141 |   await page.waitForTimeout(1000);\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:138:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:07:18.694Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-validations-is-working-correct-chromium/error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 300388,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 14,
+                        "line": 138
+                      },
+                      "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"email1\"]') to be visible\u001b[22m\n\n\n  136 |     .getByRole(\"button\", { name: \"Create\" })\n  137 |     .click();\n> 138 |   await page.waitForSelector('[data-test=\"email1\"]');\n      |              ^\n  139 |\n  140 |   await page.locator(\"#save-btn-header-button\").click();\n  141 |   await page.waitForTimeout(1000);\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:138:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-07-31T06:12:19.475Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-validations-is-working-correct-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-validations-is-working-correct-chromium-retry1/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-b2cdb9f40e0b7e4dc065",
+          "file": "DetailView.spec.ts",
+          "line": 132,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView2.spec.ts",
+      "file": "DetailView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Save, Edit & Delete are working correct",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 4,
+                  "status": "timedOut",
+                  "duration": 300067,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 14,
+                        "line": 35
+                      },
+                      "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"billing_address\"]') to be visible\u001b[22m\n\n\n  33 |     .getByRole(\"button\", { name: \"Create\" })\n  34 |     .click();\n> 35 |   await page.waitForSelector('[data-test=\"billing_address\"]');\n     |              ^\n  36 |\n  37 |   const timestamp = Date.now().toString();\n  38 |\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:35:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:17.842Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Save-Edit-Delete-are-working-correct-chromium/error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 300330,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 14,
+                        "line": 35
+                      },
+                      "message": "Error: page.waitForSelector: Test timeout of 300000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"billing_address\"]') to be visible\u001b[22m\n\n\n  33 |     .getByRole(\"button\", { name: \"Create\" })\n  34 |     .click();\n> 35 |   await page.waitForSelector('[data-test=\"billing_address\"]');\n     |              ^\n  36 |\n  37 |   const timestamp = Date.now().toString();\n  38 |\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:35:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-07-31T06:10:19.305Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Save-Edit-Delete-are-working-correct-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Save-Edit-Delete-are-working-correct-chromium-retry1/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-83bee7ffbfcea48d4aa2",
+          "file": "DetailView2.spec.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "That Return to List button is exist and working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:15:20.635Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-448e5a030b59150ffc6d",
+          "file": "DetailView2.spec.ts",
+          "line": 92,
+          "column": 5
+        },
+        {
+          "title": "That Image input has been rendered and working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4899,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:15:27.639Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-62f27e3d9877b31dbfd0",
+          "file": "DetailView2.spec.ts",
+          "line": 109,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ListView.spec.ts",
+      "file": "ListView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That layout tabs interact correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 38304,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:16.961Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-46b96d33dd918d4d8fc5",
+          "file": "ListView.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That pagination control works correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 40189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:55.914Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-15724abdcbb909c11e79",
+          "file": "ListView.spec.ts",
+          "line": 45,
+          "column": 5
+        },
+        {
+          "title": "That limit and offset controls work correcty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 22589,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:36.156Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-ca485fb4cec427d47e6d",
+          "file": "ListView.spec.ts",
+          "line": 126,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ListView2.spec.ts",
+      "file": "ListView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Basic Filters work correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 62120,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:17.505Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-b55ac7749d6711536eb6",
+          "file": "ListView2.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Advansed Filters work correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 33900,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:20.140Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-1fa15712e6b92eebd741",
+          "file": "ListView2.spec.ts",
+          "line": 128,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "SubPanels.spec.ts",
+      "file": "SubPanels.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That collapse feature is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 46317,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:17.873Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-c9dc6b3b3aec25d4315a",
+          "file": "SubPanels.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That remove relation is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 7,
+                  "status": "failed",
+                  "duration": 43278,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: not \u001b[32m\"8 results\"\u001b[39m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: not \u001b[32m\"8 results\"\u001b[39m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:100:24",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                      "column": 24,
+                      "line": 100
+                    },
+                    "snippet": "   98 |\n   99 |   //Add existing worked correctly\n> 100 |   expect(original).not.toEqual(afterAdd);\n      |                        ^\n  101 |\n  102 |   await page\n  103 |     .getByLabel(\"Contacts\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 24,
+                        "line": 100
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: not \u001b[32m\"8 results\"\u001b[39m\n\n\n   98 |\n   99 |   //Add existing worked correctly\n> 100 |   expect(original).not.toEqual(afterAdd);\n      |                        ^\n  101 |\n  102 |   await page\n  103 |     .getByLabel(\"Contacts\")\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:100:24"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:05.011Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-remove-relation-is-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                    "column": 24,
+                    "line": 100
+                  }
+                },
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 7,
+                  "status": "failed",
+                  "duration": 21270,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: not \u001b[32m\"8 results\"\u001b[39m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: not \u001b[32m\"8 results\"\u001b[39m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:100:24",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                      "column": 24,
+                      "line": 100
+                    },
+                    "snippet": "   98 |\n   99 |   //Add existing worked correctly\n> 100 |   expect(original).not.toEqual(afterAdd);\n      |                        ^\n  101 |\n  102 |   await page\n  103 |     .getByLabel(\"Contacts\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 24,
+                        "line": 100
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: not \u001b[32m\"8 results\"\u001b[39m\n\n\n   98 |\n   99 |   //Add existing worked correctly\n> 100 |   expect(original).not.toEqual(afterAdd);\n      |                        ^\n  101 |\n  102 |   await page\n  103 |     .getByLabel(\"Contacts\")\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:100:24"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-07-31T06:06:54.023Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-remove-relation-is-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-remove-relation-is-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                    "column": 24,
+                    "line": 100
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-eaa4a7a0f9bf4865cc77",
+          "file": "SubPanels.spec.ts",
+          "line": 56,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ThemeEditor.spec.ts",
+      "file": "ThemeEditor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That theme presets list is correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 8,
+                  "status": "passed",
+                  "duration": 35449,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:17.762Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-64fecde7a0b4862250a0",
+          "file": "ThemeEditor.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Theme Options tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 8,
+                  "status": "passed",
+                  "duration": 32856,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:05:53.814Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-a0fa7c821176701e6ba5",
+          "file": "ThemeEditor.spec.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Colors tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 8,
+                  "status": "passed",
+                  "duration": 28748,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-31T06:06:26.709Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-b16801458389abf994ac",
+          "file": "ThemeEditor.spec.ts",
+          "line": 83,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-31T06:05:06.136Z",
+    "duration": 734065.488,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}
