@@ -1,0 +1,2546 @@
+{
+  "config": {
+    "configFile": "/home/crmadmin/app-js/packages/app-js/playwright.config.ts",
+    "rootDir": "/home/crmadmin/app-js/packages/app-js/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 10
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/home/crmadmin/app-js/packages/app-js/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/crmadmin/app-js/packages/app-js/tests",
+        "testIgnore": [
+          "/axe\\..*\\.spec\\.ts/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12494,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:33.341Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-60f085b113a677673906",
+          "file": "auth.setup.ts",
+          "line": 14,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "auth.CaptchaRateLimit.spec.ts",
+      "file": "auth.CaptchaRateLimit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "switches captcha to manual mode after wrong credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.243Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "977f28cda58c8424e926-a7149d3060919dc58293",
+          "file": "auth.CaptchaRateLimit.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "shows stable cooldown message on auth rate limit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:05.430Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "977f28cda58c8424e926-350e0471eaf2ddc104cb",
+          "file": "auth.CaptchaRateLimit.spec.ts",
+          "line": 66,
+          "column": 5
+        },
+        {
+          "title": "surfaces captcha throttle errors from widget events",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:22.599Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "977f28cda58c8424e926-7afbb19b70c50d78b8d1",
+          "file": "auth.CaptchaRateLimit.spec.ts",
+          "line": 92,
+          "column": 5
+        },
+        {
+          "title": "resets captcha token after malformed token auth failure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:33.041Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "977f28cda58c8424e926-d4577e82960c12cb61fe",
+          "file": "auth.CaptchaRateLimit.spec.ts",
+          "line": 117,
+          "column": 5
+        },
+        {
+          "title": "shows recover flow throttle state for 429 responses",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:43.532Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "977f28cda58c8424e926-565e912514e4586f2c86",
+          "file": "auth.CaptchaRateLimit.spec.ts",
+          "line": 149,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "dashboard.spec.ts",
+      "file": "dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Dashboard elements were properly rendered",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 42943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.398Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-90451cbc94dbc47b587b",
+          "file": "dashboard.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "That Edit Dashboard Info item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 35597,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:35.874Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-48ea563d43e5361ca078",
+          "file": "dashboard.spec.ts",
+          "line": 48,
+          "column": 5
+        },
+        {
+          "title": "That Create New Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 31467,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:43:11.598Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-c258089c7640a5b90cba",
+          "file": "dashboard.spec.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "title": "That Duplicate Dashboard item is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 25991,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:43:43.180Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90cda532ab82d274b30b-d2b0af1fbe7b3307513a",
+          "file": "dashboard.spec.ts",
+          "line": 84,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Dashboard2.spec.ts",
+      "file": "Dashboard2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Set Columns feature on Edit Layout is working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 50865,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.559Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-6138f194829d37dddfea",
+          "file": "Dashboard2.spec.ts",
+          "line": 36,
+          "column": 5
+        },
+        {
+          "title": "That Add and Remove Dashlet features on Edit Layout are working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 47266,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:44.179Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "261b7280d5464711de3e-93d06ee508fcd905d3f3",
+          "file": "Dashboard2.spec.ts",
+          "line": 74,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Dashlets.spec.ts",
+      "file": "Dashlets.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That 'Notepad' dashlet is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 92749,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.of-dialog.add-layout-dialog.edit-dashlet-layout').first().getByRole('button', { name: /Cancel/i }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"0\" type=\"button\" class=\"of-button-main\" id=\"of-button-26-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  17 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.of-dialog.add-layout-dialog.edit-dashlet-layout').first().getByRole('button', { name: /Cancel/i }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"0\" type=\"button\" class=\"of-button-main\" id=\"of-button-26-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  17 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:85:8",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                      "column": 8,
+                      "line": 85
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 83 |\u001b[39m       \u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/Cancel/i\u001b[39m })\n \u001b[90m 84 |\u001b[39m       \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 86 |\u001b[39m   }\n \u001b[90m 87 |\u001b[39m   \u001b[36mawait\u001b[39m expect(dialog)\u001b[33m.\u001b[39mtoBeHidden()\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m   \u001b[36mawait\u001b[39m expect\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                        "column": 8,
+                        "line": 85
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.of-dialog.add-layout-dialog.edit-dashlet-layout').first().getByRole('button', { name: /Cancel/i }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"0\" type=\"button\" class=\"of-button-main\" id=\"of-button-26-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  17 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 83 |\u001b[39m       \u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/Cancel/i\u001b[39m })\n \u001b[90m 84 |\u001b[39m       \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 86 |\u001b[39m   }\n \u001b[90m 87 |\u001b[39m   \u001b[36mawait\u001b[39m expect(dialog)\u001b[33m.\u001b[39mtoBeHidden()\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m   \u001b[36mawait\u001b[39m expect\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:85:8\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.156Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/Dashlets-That-Notepad-dashlet-is-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                    "column": 8,
+                    "line": 85
+                  }
+                },
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 78758,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.of-dialog.add-layout-dialog.edit-dashlet-layout').first().getByRole('button', { name: /Cancel/i }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"0\" type=\"button\" class=\"of-button-main\" id=\"of-button-32-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  17 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.of-dialog.add-layout-dialog.edit-dashlet-layout').first().getByRole('button', { name: /Cancel/i }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"0\" type=\"button\" class=\"of-button-main\" id=\"of-button-32-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  17 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:85:8",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                      "column": 8,
+                      "line": 85
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 83 |\u001b[39m       \u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/Cancel/i\u001b[39m })\n \u001b[90m 84 |\u001b[39m       \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 86 |\u001b[39m   }\n \u001b[90m 87 |\u001b[39m   \u001b[36mawait\u001b[39m expect(dialog)\u001b[33m.\u001b[39mtoBeHidden()\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m   \u001b[36mawait\u001b[39m expect\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                        "column": 8,
+                        "line": 85
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.of-dialog.add-layout-dialog.edit-dashlet-layout').first().getByRole('button', { name: /Cancel/i }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button tabindex=\"0\" type=\"button\" class=\"of-button-main\" id=\"of-button-32-button\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  17 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div>…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div role=\"tablist\" class=\"of-tabs-header\" aria-orientation=\"horizontal\">…</div> from <div data-v-29b9b432=\"\" class=\"of-tabs of--with-border of--density-2\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 83 |\u001b[39m       \u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/Cancel/i\u001b[39m })\n \u001b[90m 84 |\u001b[39m       \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 86 |\u001b[39m   }\n \u001b[90m 87 |\u001b[39m   \u001b[36mawait\u001b[39m expect(dialog)\u001b[33m.\u001b[39mtoBeHidden()\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m   \u001b[36mawait\u001b[39m expect\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts:85:8\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:43:29.207Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/Dashlets-That-Notepad-dashlet-is-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/Dashlets-That-Notepad-dashlet-is-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/Dashlets.spec.ts",
+                    "column": 8,
+                    "line": 85
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ee767093e28c6063669f-2abebb50ae9a8208db7d",
+          "file": "Dashlets.spec.ts",
+          "line": 36,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView.spec.ts",
+      "file": "DetailView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That quick_create context is correct",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 4,
+                  "status": "failed",
+                  "duration": 50075,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:26:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 7,
+                      "line": 26
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".detail-view-form\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 7,
+                        "line": 26
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".detail-view-form\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:26:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.195Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-quick-create-context-is-correct-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 7,
+                    "line": 26
+                  }
+                },
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 4,
+                  "status": "failed",
+                  "duration": 52140,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:26:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 7,
+                      "line": 26
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".detail-view-form\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 7,
+                        "line": 26
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".detail-view-form\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:26:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:42:48.797Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-quick-create-context-is-correct-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-quick-create-context-is-correct-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 7,
+                    "line": 26
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-81511c44097ee8596c22",
+          "file": "DetailView.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "That layout tabs selection is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 4,
+                  "status": "failed",
+                  "duration": 49626,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:77:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 7,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 76 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m\n \u001b[90m 79 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"sub-panel\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 7,
+                        "line": 77
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 76 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m\n \u001b[90m 79 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"sub-panel\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:77:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:43:48.540Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-layout-tabs-selection-is-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 7,
+                    "line": 77
+                  }
+                },
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 4,
+                  "status": "failed",
+                  "duration": 47808,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:77:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 7,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 76 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m\n \u001b[90m 79 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"sub-panel\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 7,
+                        "line": 77
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 76 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m\n \u001b[90m 79 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"sub-panel\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:77:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:44:44.211Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-layout-tabs-selection-is-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-layout-tabs-selection-is-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 7,
+                    "line": 77
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-e4e011b884fb0ea4e157",
+          "file": "DetailView.spec.ts",
+          "line": 69,
+          "column": 5
+        },
+        {
+          "title": "That Status badge is visible",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 23,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 58282,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Quote\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Quote\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:107:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 6,
+                      "line": 107
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Quote\"]'\u001b[39m)\n \u001b[90m 106 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-subheader .of-field\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 6,
+                        "line": 107
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Quote\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Quote\"]'\u001b[39m)\n \u001b[90m 106 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-subheader .of-field\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:107:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:45:33.959Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-Status-badge-is-visible-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 6,
+                    "line": 107
+                  }
+                },
+                {
+                  "workerIndex": 25,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 58870,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Quote\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Quote\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:107:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                      "column": 6,
+                      "line": 107
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Quote\"]'\u001b[39m)\n \u001b[90m 106 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-subheader .of-field\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                        "column": 6,
+                        "line": 107
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Quote\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Quote\"]'\u001b[39m)\n \u001b[90m 106 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-subheader .of-field\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts:107:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:46:33.136Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-Status-badge-is-visible-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView-That-Status-badge-is-visible-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView.spec.ts",
+                    "column": 6,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-bcf8274e3b1f6f705ab5",
+          "file": "DetailView.spec.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "That field with editable = false has been rendered as readonly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 26,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17873,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:47:32.983Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-af712207651e2097baa1",
+          "file": "DetailView.spec.ts",
+          "line": 118,
+          "column": 5
+        },
+        {
+          "title": "That validations is working correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 26,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15531,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:47:50.998Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff9e03b2287ca6a6dfc0-b2cdb9f40e0b7e4dc065",
+          "file": "DetailView.spec.ts",
+          "line": 132,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "DetailView2.spec.ts",
+      "file": "DetailView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Save, Edit & Delete are working correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 105597,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.123Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-83bee7ffbfcea48d4aa2",
+          "file": "DetailView2.spec.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "That Return to List button is exist and working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 5,
+                  "status": "failed",
+                  "duration": 46490,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:117:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                      "column": 7,
+                      "line": 117
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 115 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 116 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 117 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 118 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label=\"Return to List\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".of-data-table-row\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 7,
+                        "line": 117
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 115 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 116 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 117 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 118 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label=\"Return to List\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".of-data-table-row\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:117:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:43:37.615Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Return-to-List-button-is-exist-and-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                    "column": 7,
+                    "line": 117
+                  }
+                },
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 46119,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:117:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                      "column": 7,
+                      "line": 117
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 115 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 116 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 117 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 118 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label=\"Return to List\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".of-data-table-row\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 7,
+                        "line": 117
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 115 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 116 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 117 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 118 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label=\"Return to List\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".of-data-table-row\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:117:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:44:25.103Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Return-to-List-button-is-exist-and-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Return-to-List-button-is-exist-and-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                    "column": 7,
+                    "line": 117
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-448e5a030b59150ffc6d",
+          "file": "DetailView2.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "That Image input has been rendered and working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 45684,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:137:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                      "column": 7,
+                      "line": 137
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 136 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m\n \u001b[90m 139 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-image\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 7,
+                        "line": 137
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 136 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m\n \u001b[90m 139 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-image\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:137:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:45:12.318Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Image-input-has-been-rendered-and-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                    "column": 7,
+                    "line": 137
+                  }
+                },
+                {
+                  "workerIndex": 24,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 46383,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:137:7",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                      "column": 7,
+                      "line": 137
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 136 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m\n \u001b[90m 139 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-image\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                        "column": 7,
+                        "line": 137
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 136 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m     \u001b[33m?\u001b[39m\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m\n \u001b[90m 139 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"section\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".summary-image\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts:137:7\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:45:58.861Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Image-input-has-been-rendered-and-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/DetailView2-That-Image-input-has-been-rendered-and-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/DetailView2.spec.ts",
+                    "column": 7,
+                    "line": 137
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3859e96b2deb4de72dba-62f27e3d9877b31dbfd0",
+          "file": "DetailView2.spec.ts",
+          "line": 128,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ImportDB.spec.ts",
+      "file": "ImportDB.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "[ImportDB] Import wizard",
+          "file": "ImportDB.spec.ts",
+          "line": 132,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should import Contacts from a generated CSV file through every wizard step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 49689,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-13T14:41:51.392Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8af6a086fa3f2af7ae88-c4e052c5cd8f238f4415",
+              "file": "ImportDB.spec.ts",
+              "line": 133,
+              "column": 7
+            },
+            {
+              "title": "should allow navigating back through the wizard steps and cancel back to the list view",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 53021,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-13T14:42:42.715Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8af6a086fa3f2af7ae88-9ae2792a4e1c9fcb2c28",
+              "file": "ImportDB.spec.ts",
+              "line": 169,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ListView.spec.ts",
+      "file": "ListView.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That layout tabs interact correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 62171,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.375Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-46b96d33dd918d4d8fc5",
+          "file": "ListView.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That pagination control works correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 7,
+                  "status": "failed",
+                  "duration": 48484,
+                  "error": {
+                    "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:55:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                      "column": 6,
+                      "line": 55
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 54 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m   \u001b[36mawait\u001b[39m page\n \u001b[90m 58 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"pagination\"]'\u001b[39m)\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 6,
+                        "line": 55
+                      },
+                      "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 53 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 54 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m   \u001b[36mawait\u001b[39m page\n \u001b[90m 58 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"pagination\"]'\u001b[39m)\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:55:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:55.308Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView-That-pagination-control-works-correctly-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                    "column": 6,
+                    "line": 55
+                  }
+                },
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 6,
+                  "status": "failed",
+                  "duration": 51487,
+                  "error": {
+                    "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:55:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                      "column": 6,
+                      "line": 55
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 54 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m   \u001b[36mawait\u001b[39m page\n \u001b[90m 58 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"pagination\"]'\u001b[39m)\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 6,
+                        "line": 55
+                      },
+                      "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 53 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 54 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m   \u001b[36mawait\u001b[39m page\n \u001b[90m 58 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"pagination\"]'\u001b[39m)\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:55:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:43:48.794Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView-That-pagination-control-works-correctly-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView-That-pagination-control-works-correctly-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                    "column": 6,
+                    "line": 55
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-15724abdcbb909c11e79",
+          "file": "ListView.spec.ts",
+          "line": 45,
+          "column": 5
+        },
+        {
+          "title": "That limit and offset controls work correcty",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 46234,
+                  "error": {
+                    "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:135:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                      "column": 6,
+                      "line": 135
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 133 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 134 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 136 |\u001b[39m\n \u001b[90m 137 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#of-pagination-1-expand-button\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"spinbutton\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Start At\"\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m\"11\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 6,
+                        "line": 135
+                      },
+                      "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 133 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 134 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 136 |\u001b[39m\n \u001b[90m 137 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#of-pagination-1-expand-button\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"spinbutton\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Start At\"\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m\"11\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:135:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:44:42.330Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView-That-limit-and-offset-controls-work-correcty-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                    "column": 6,
+                    "line": 135
+                  }
+                },
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 46166,
+                  "error": {
+                    "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:135:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                      "column": 6,
+                      "line": 135
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 133 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 134 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 136 |\u001b[39m\n \u001b[90m 137 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#of-pagination-1-expand-button\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"spinbutton\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Start At\"\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m\"11\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                        "column": 6,
+                        "line": 135
+                      },
+                      "message": "TimeoutError: locator.textContent: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 133 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 134 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 135 |\u001b[39m     \u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 136 |\u001b[39m\n \u001b[90m 137 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#of-pagination-1-expand-button\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"spinbutton\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Start At\"\u001b[39m })\u001b[33m.\u001b[39mfill(\u001b[32m\"11\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts:135:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:45:29.352Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView-That-limit-and-offset-controls-work-correcty-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView-That-limit-and-offset-controls-work-correcty-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView.spec.ts",
+                    "column": 6,
+                    "line": 135
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "36a310fcaf1f49f83f21-ca485fb4cec427d47e6d",
+          "file": "ListView.spec.ts",
+          "line": 127,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ListView2.spec.ts",
+      "file": "ListView2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That Basic Filters work correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 8,
+                  "status": "passed",
+                  "duration": 71032,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.497Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-b55ac7749d6711536eb6",
+          "file": "ListView2.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That Advansed Filters work correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 8,
+                  "status": "failed",
+                  "duration": 84154,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('menu').getByText('Customers')\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('menu').getByText('Customers')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:155:55",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                      "column": 55,
+                      "line": 155
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 153 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Advanced Filters\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#-filter-categories-outer\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 155 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"menu\"\u001b[39m)\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Customers\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 156 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Apply Filter\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 157 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"loading-indicator-header\"]'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m 158 |\u001b[39m     state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                        "column": 55,
+                        "line": 155
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('menu').getByText('Customers')\u001b[22m\n\n\n\u001b[0m \u001b[90m 153 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Advanced Filters\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#-filter-categories-outer\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 155 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"menu\"\u001b[39m)\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Customers\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 156 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Apply Filter\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 157 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"loading-indicator-header\"]'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m 158 |\u001b[39m     state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:155:55\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:43:04.284Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView2-That-Advansed-Filters-work-correctly-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                    "column": 55,
+                    "line": 155
+                  }
+                },
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 5,
+                  "status": "failed",
+                  "duration": 71048,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('menu').getByText('Customers')\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('menu').getByText('Customers')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:155:55",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                      "column": 55,
+                      "line": 155
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 153 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Advanced Filters\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#-filter-categories-outer\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 155 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"menu\"\u001b[39m)\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Customers\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 156 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Apply Filter\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 157 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"loading-indicator-header\"]'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m 158 |\u001b[39m     state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                        "column": 55,
+                        "line": 155
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('menu').getByText('Customers')\u001b[22m\n\n\n\u001b[0m \u001b[90m 153 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Advanced Filters\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#-filter-categories-outer\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 155 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"menu\"\u001b[39m)\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Customers\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 156 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Apply Filter\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 157 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-test=\"loading-indicator-header\"]'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m 158 |\u001b[39m     state\u001b[33m:\u001b[39m \u001b[32m\"hidden\"\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts:155:55\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:44:30.672Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView2-That-Advansed-Filters-work-correctly-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ListView2-That-Advansed-Filters-work-correctly-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ListView2.spec.ts",
+                    "column": 55,
+                    "line": 155
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "77bf94e48a0aa76b8204-1fa15712e6b92eebd741",
+          "file": "ListView2.spec.ts",
+          "line": 124,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "perf/flows.perf.spec.ts",
+      "file": "perf/flows.perf.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "perf: critical flows",
+          "file": "perf/flows.perf.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "login→dashboard visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set PW_PERF=1 to run perf baselines",
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                        "line": 20,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-13T14:41:47.049Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set PW_PERF=1 to run perf baselines",
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                            "line": 20,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bda33f279c62cd74cbc5-5b44b88d7f080d541230",
+              "file": "perf/flows.perf.spec.ts",
+              "line": 100,
+              "column": 7
+            },
+            {
+              "title": "list view: Accounts browse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set PW_PERF=1 to run perf baselines",
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                        "line": 20,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-13T14:41:47.050Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set PW_PERF=1 to run perf baselines",
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                            "line": 20,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bda33f279c62cd74cbc5-9a3d21e8536877cf8014",
+              "file": "perf/flows.perf.spec.ts",
+              "line": 144,
+              "column": 7
+            },
+            {
+              "title": "detail view: first Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set PW_PERF=1 to run perf baselines",
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                        "line": 20,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-13T14:41:47.051Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set PW_PERF=1 to run perf baselines",
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                            "line": 20,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bda33f279c62cd74cbc5-185bb695635e3fb10117",
+              "file": "perf/flows.perf.spec.ts",
+              "line": 188,
+              "column": 7
+            },
+            {
+              "title": "detail view: direct URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set PW_PERF=1 to run perf baselines",
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                        "line": 20,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-13T14:41:47.052Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set PW_PERF=1 to run perf baselines",
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                            "line": 20,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bda33f279c62cd74cbc5-a0beea8367e9278cf661",
+              "file": "perf/flows.perf.spec.ts",
+              "line": 298,
+              "column": 7
+            },
+            {
+              "title": "edit+save: create temp Account and delete",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set PW_PERF=1 to run perf baselines",
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                        "line": 20,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-13T14:41:47.053Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set PW_PERF=1 to run perf baselines",
+                          "location": {
+                            "file": "/home/crmadmin/app-js/packages/app-js/tests/perf/flows.perf.spec.ts",
+                            "line": 20,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bda33f279c62cd74cbc5-0ef028b0fb5a7df64641",
+              "file": "perf/flows.perf.spec.ts",
+              "line": 351,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SubPanels.spec.ts",
+      "file": "SubPanels.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That collapse feature is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 9,
+                  "status": "failed",
+                  "duration": 49614,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:26:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                      "column": 6,
+                      "line": 26
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 6,
+                        "line": 26
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:26:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:41:51.359Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-collapse-feature-is-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                    "column": 6,
+                    "line": 26
+                  }
+                },
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 9,
+                  "status": "failed",
+                  "duration": 51454,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:26:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                      "column": 6,
+                      "line": 26
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 6,
+                        "line": 26
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"action=DetailView&module=Accounts\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"action=DetailView&module=Accounts\"]'\u001b[39m)\n \u001b[90m 25 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\".subpanels\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:26:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:42:48.499Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-collapse-feature-is-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-collapse-feature-is-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                    "column": 6,
+                    "line": 26
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-c9dc6b3b3aec25d4315a",
+          "file": "SubPanels.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "That remove relation is working",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 47169,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Opportunities\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Opportunities\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:64:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                      "column": 6,
+                      "line": 64
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 62 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Opportunities\"]'\u001b[39m)\n \u001b[90m 63 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//The number of records\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m original \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 6,
+                        "line": 64
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Opportunities\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 62 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Opportunities\"]'\u001b[39m)\n \u001b[90m 63 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//The number of records\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m original \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:64:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:43:43.128Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-remove-relation-is-working-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                    "column": 6,
+                    "line": 64
+                  }
+                },
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 47076,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Opportunities\"]').first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Opportunities\"]').first()\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:64:6",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                      "column": 6,
+                      "line": 64
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 62 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Opportunities\"]'\u001b[39m)\n \u001b[90m 63 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//The number of records\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m original \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                        "column": 6,
+                        "line": 64
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"data-table\"]').locator('.of-data-table-row').first().locator('a[href*=\"Opportunities\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 62 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m'a[href*=\"Opportunities\"]'\u001b[39m)\n \u001b[90m 63 |\u001b[39m     \u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//The number of records\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m original \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts:64:6\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:44:33.792Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-remove-relation-is-working-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/SubPanels-That-remove-relation-is-working-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/SubPanels.spec.ts",
+                    "column": 6,
+                    "line": 64
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f11f375e19ad8694b109-eaa4a7a0f9bf4865cc77",
+          "file": "SubPanels.spec.ts",
+          "line": 56,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ThemeEditor.spec.ts",
+      "file": "ThemeEditor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "That theme presets list is correct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 40694,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:42:53.983Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-64fecde7a0b4862250a0",
+          "file": "ThemeEditor.spec.ts",
+          "line": 24,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Theme Options tab",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25135,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Preset Name')\nExpected: visible\nError: strict mode violation: getByLabel('Preset Name') resolved to 2 elements:\n    1) <span tabindex=\"0\" role=\"button\" id=\"of-data-table-5-header-0\" aria-label=\"Preset name. Press to sort by this column.\">…</span> aka getByRole('button', { name: 'Preset name. Press to sort by' })\n    2) <input value=\"\" name=\"name\" type=\"text\" id=\"of-field-15\" aria-label=\"Preset Name\" class=\"of-field-input of--align-start\"/> aka getByRole('textbox', { name: 'Preset Name' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Preset Name')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Preset Name')\nExpected: visible\nError: strict mode violation: getByLabel('Preset Name') resolved to 2 elements:\n    1) <span tabindex=\"0\" role=\"button\" id=\"of-data-table-5-header-0\" aria-label=\"Preset name. Press to sort by this column.\">…</span> aka getByRole('button', { name: 'Preset name. Press to sort by' })\n    2) <input value=\"\" name=\"name\" type=\"text\" id=\"of-field-15\" aria-label=\"Preset Name\" class=\"of-field-input of--align-start\"/> aka getByRole('textbox', { name: 'Preset Name' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Preset Name')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:67:48",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                      "column": 48,
+                      "line": 67
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//Header Inputs\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 67 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Preset Name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 68 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Shared with\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m//Tabs\u001b[39m\n \u001b[90m 70 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Theme Options\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                        "column": 48,
+                        "line": 67
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Preset Name')\nExpected: visible\nError: strict mode violation: getByLabel('Preset Name') resolved to 2 elements:\n    1) <span tabindex=\"0\" role=\"button\" id=\"of-data-table-5-header-0\" aria-label=\"Preset name. Press to sort by this column.\">…</span> aka getByRole('button', { name: 'Preset name. Press to sort by' })\n    2) <input value=\"\" name=\"name\" type=\"text\" id=\"of-field-15\" aria-label=\"Preset Name\" class=\"of-field-input of--align-start\"/> aka getByRole('textbox', { name: 'Preset Name' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Preset Name')\u001b[22m\n\n\n\u001b[0m \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//Header Inputs\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 67 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Preset Name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 68 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Shared with\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m//Tabs\u001b[39m\n \u001b[90m 70 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Theme Options\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:67:48\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:43:34.781Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ThemeEditor-Create-Theme-form-elements---Theme-Options-tab-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                    "column": 48,
+                    "line": 67
+                  }
+                },
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17000,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Preset Name')\nExpected: visible\nError: strict mode violation: getByLabel('Preset Name') resolved to 2 elements:\n    1) <span tabindex=\"0\" role=\"button\" id=\"of-data-table-1-header-0\" aria-label=\"Preset name. Press to sort by this column.\">…</span> aka getByRole('button', { name: 'Preset name. Press to sort by' })\n    2) <input value=\"\" name=\"name\" type=\"text\" id=\"of-field-15\" aria-label=\"Preset Name\" class=\"of-field-input of--align-start\"/> aka getByRole('textbox', { name: 'Preset Name' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Preset Name')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Preset Name')\nExpected: visible\nError: strict mode violation: getByLabel('Preset Name') resolved to 2 elements:\n    1) <span tabindex=\"0\" role=\"button\" id=\"of-data-table-1-header-0\" aria-label=\"Preset name. Press to sort by this column.\">…</span> aka getByRole('button', { name: 'Preset name. Press to sort by' })\n    2) <input value=\"\" name=\"name\" type=\"text\" id=\"of-field-15\" aria-label=\"Preset Name\" class=\"of-field-input of--align-start\"/> aka getByRole('textbox', { name: 'Preset Name' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Preset Name')\u001b[22m\n\n    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:67:48",
+                    "location": {
+                      "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                      "column": 48,
+                      "line": 67
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//Header Inputs\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 67 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Preset Name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 68 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Shared with\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m//Tabs\u001b[39m\n \u001b[90m 70 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Theme Options\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                        "column": 48,
+                        "line": 67
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Preset Name')\nExpected: visible\nError: strict mode violation: getByLabel('Preset Name') resolved to 2 elements:\n    1) <span tabindex=\"0\" role=\"button\" id=\"of-data-table-1-header-0\" aria-label=\"Preset name. Press to sort by this column.\">…</span> aka getByRole('button', { name: 'Preset name. Press to sort by' })\n    2) <input value=\"\" name=\"name\" type=\"text\" id=\"of-field-15\" aria-label=\"Preset Name\" class=\"of-field-input of--align-start\"/> aka getByRole('textbox', { name: 'Preset Name' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 80000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Preset Name')\u001b[22m\n\n\n\u001b[0m \u001b[90m 65 |\u001b[39m\n \u001b[90m 66 |\u001b[39m   \u001b[90m//Header Inputs\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 67 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Preset Name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 68 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Shared with\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m//Tabs\u001b[39m\n \u001b[90m 70 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m\"Theme Options\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts:67:48\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-08-13T14:44:02.903Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ThemeEditor-Create-Theme-form-elements---Theme-Options-tab-chromium-retry1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/crmadmin/app-js/packages/app-js/test-results/ThemeEditor-Create-Theme-form-elements---Theme-Options-tab-chromium-retry1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/crmadmin/app-js/packages/app-js/tests/ThemeEditor.spec.ts",
+                    "column": 48,
+                    "line": 67
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-a0fa7c821176701e6ba5",
+          "file": "ThemeEditor.spec.ts",
+          "line": 53,
+          "column": 5
+        },
+        {
+          "title": "Create Theme form elements - Colors tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 20348,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-13T14:44:21.122Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0e718c0f5f7a12cda2f3-b16801458389abf994ac",
+          "file": "ThemeEditor.spec.ts",
+          "line": 89,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-13T14:41:32.057Z",
+    "duration": 394548.423,
+    "expected": 21,
+    "skipped": 5,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}
